@@ -1,0 +1,16 @@
+set(DATA_DIR "${CMAKE_CURRENT_SOURCE_DIR}/data")
+
+function(dharani_test name source)
+  add_executable(${name} ${source})
+  target_include_directories(${name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+  target_compile_definitions(${name} PRIVATE DHARANI_TEST_DATA="${DATA_DIR}")
+  target_link_libraries(${name} PRIVATE ${ARGN})
+  add_test(NAME ${name} COMMAND ${name})
+endfunction()
+
+dharani_test(test_crypto_attestation native/test_crypto_attestation.cpp dharani_native)
+dharani_test(test_sensor_fusion native/test_sensor_fusion.cpp dharani_native)
+dharani_test(test_valhalla_routing native/test_valhalla_routing.cpp dharani_native)
+dharani_test(test_mesh native/test_mesh.cpp dharani_native)
+dharani_test(test_beckn_b2b_state_machine protocol/test_beckn_b2b_state_machine.cpp dharani_protocol)
+dharani_test(test_c_api native/test_c_api.cpp dharani_ffi dharani_native)

@@ -1,0 +1,6 @@
+syntax = "proto3";
+package dharani.beckn;
+message Cargo { double volume_m3=1; double tonnage=2; double min_temperature_c=3; double max_temperature_c=4; int64 delivery_deadline_epoch_s=5; }
+message Rfq { string transaction_id=1; string consignor_id=2; string origin=3; string destination=4; Cargo cargo=5; }
+message CarrierQuote { string carrier_id=1; double price_paise=2; double collateral_paise=3; string lane_commitment=4; }
+message ProtocolEnvelope { string action=1; string transaction_id=2; string message_json=3; }

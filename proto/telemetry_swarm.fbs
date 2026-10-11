@@ -1,0 +1,9 @@
+namespace dharani.telemetry;
+
+enum RoadHazardType:byte { None, Pothole, Congestion, BlackIce, Detour, StalledVehicle }
+table Location { latitude:double; longitude:double; altitude:float; heading:float; ground_speed:float; positional_accuracy:float; }
+table SensorDiagnostics { engine_rpm:uint; fuel_level_percent:float; obd2_fault_code_count:uint; battery_state_of_charge_percent:float; }
+table SwarmAnomaly { hazard:RoadHazardType = None; severity:float; }
+table TelemetryEnvelope { vehicle_id:string (required); hardware_attestation:[ubyte]; timestamp_ns:ulong; location:Location (required); diagnostics:SensorDiagnostics; anomaly:SwarmAnomaly; }
+root_type TelemetryEnvelope;
+file_identifier "DHTM";

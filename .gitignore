@@ -1,0 +1,38 @@
+# build outputs
+build/
+**/build/
+.dart_tool/
+.gradle/
+.cxx/
+*.apk
+*.aab
+*.so
+*.dylib
+*.o
+*.a
+# local state
+.idea/
+.vscode/
+*.iml
+local.properties
+.flutter-plugins*
+.packages
+.pub-cache/
+pubspec_overrides.yaml
+.DS_Store
+# runtime data / secrets
+*.jsonl
+rides.jsonl
+.env
+*.pem
+*.key
+provision.json
+key.properties
+# downloaded models and SDKs (fetched in-app / by tools)
+models/
+**/ai_models/
+qairt*/
+*.onnx
+*.bin
+*.zip
+*.dlc

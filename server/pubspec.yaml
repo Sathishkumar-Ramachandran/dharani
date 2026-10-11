@@ -1,0 +1,13 @@
+name: dharani_server
+description: Matching, live-location and translated-call relay server for Dharani.
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+dependencies:
+  crypto: ^3.0.7
+  dharani_protocol:
+    path: ../packages/dharani_protocol
+dev_dependencies:
+  test: ^1.25.0
+  lints: ^6.0.0

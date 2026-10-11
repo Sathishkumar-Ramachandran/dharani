@@ -1,0 +1,40 @@
+name: dharani_mobile
+description: Edge-native freight integrity console for Project Dharani.
+publish_to: none
+version: 0.2.0+2
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  archive: ^4.3.0
+  connectivity_plus: ^7.3.2
+  crypto: ^3.0.7
+  dharani_protocol:
+    path: ../packages/dharani_protocol
+  ffi: ^2.2.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_map: ^8.3.2
+  flutter_secure_storage: ^11.2.0
+  flutter_tts: ^4.2.5
+  geolocator: ^14.0.1
+  google_mlkit_translation: ^0.15.1
+  http: ^1.6.0
+  latlong2: ^0.10.1
+  path_provider: ^2.1.6
+  sensors_plus: ^7.1.1
+  speech_to_text: ^7.5.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/road_graph.json
+    - assets/ai_pack.json
+dev_dependencies:
+  dharani_server:
+    path: ../server
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter

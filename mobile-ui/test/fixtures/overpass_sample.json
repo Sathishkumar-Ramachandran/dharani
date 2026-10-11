@@ -1,0 +1,12 @@
+{"elements":[
+{"type":"node","id":1,"lat":12.9000,"lon":77.6000},
+{"type":"node","id":2,"lat":12.9010,"lon":77.6000},
+{"type":"node","id":3,"lat":12.9020,"lon":77.6010},
+{"type":"node","id":4,"lat":12.9020,"lon":77.6030},
+{"type":"node","id":5,"lat":12.9100,"lon":77.6100},
+{"type":"way","id":10,"nodes":[1,2,3],"tags":{"highway":"primary","ref":"NH 48","maxspeed":"60","toll":"yes"}},
+{"type":"way","id":11,"nodes":[3,4],"tags":{"highway":"residential","name":"Lane 4","oneway":"yes","hgv":"no"}},
+{"type":"way","id":12,"nodes":[4,5],"tags":{"highway":"motorway","maxheight":"4.5 m"}},
+{"type":"way","id":13,"nodes":[1,5],"tags":{"highway":"footway"}},
+{"type":"way","id":14,"nodes":[2,4],"tags":{"highway":"service","access":"private"}}
+]}

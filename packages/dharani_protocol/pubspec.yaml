@@ -1,0 +1,6 @@
+name: dharani_protocol
+description: Wire protocol shared by the Dharani apps and server.
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: ">=3.5.0 <4.0.0"

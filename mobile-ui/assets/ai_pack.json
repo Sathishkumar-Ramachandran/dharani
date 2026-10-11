@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "id": "whisper-small-sm8850",
+      "name": "Whisper Small speech recognition (Snapdragon 8 Elite Gen 5)",
+      "kind": "asr",
+      "url": "https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/whisper_small/releases/v0.55.0/whisper_small-precompiled_qnn_onnx-float-qualcomm_snapdragon_8_elite_gen5.zip",
+      "sha256": "4434862347d8cb3d1bf086ec16697b4def8018e44cbd5cf7d40069ffb7a702d3",
+      "size_bytes": 520338010,
+      "soc_models": ["SM8850"],
+      "extract": true,
+      "languages": ["en", "hi", "ta", "te", "kn", "mr", "bn", "gu", "ur", "fr"]
+    },
+    {
+      "id": "whisper-tokenizer",
+      "name": "Whisper tokenizer",
+      "kind": "asr",
+      "url": "https://huggingface.co/openai/whisper-small/resolve/main/tokenizer.json",
+      "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+      "size_bytes": 2480466,
+      "soc_models": ["SM8850"]
+    }
+  ]
+}
